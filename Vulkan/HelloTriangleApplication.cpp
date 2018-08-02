@@ -95,7 +95,7 @@ private:
 
 		unsigned int j = 0;
 		unsigned int i = 0;
-		for (i = 0; i < sizeof(glfwExtensions) / sizeof(const char**); i++) {
+		for (i = 0; i < sizeof(glfwExtensions) / sizeof(const char**); i++) { // ESTO NO FUNCIONA
 			bool control = false;
 			for (const auto& extension : extensions) {
 				if (strcmp(glfwExtensions[i], extension.extensionName) == 0) {
